@@ -5,4 +5,3 @@ function CardHeader(props) {
 }
 
 export default CardHeader;
-

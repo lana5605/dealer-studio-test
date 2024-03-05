@@ -5,5 +5,3 @@ function CardBody(props) {
 }
 
 export default CardBody;
-
-

@@ -11,7 +11,11 @@ function App() {
   const [selectedCard, setSelectedCard] = useState(2);
   return (
     <div className="App">
-      <Banner />
+      <Banner>
+        <h1 className="BannerTitle">Welcome to G Automotive</h1>
+        <p className="BannerSubtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <Button buttonText="Contact Us" />
+      </Banner>
       <div className="Cards">
         <Card testid="card1" isSelected={selectedCard === 1} style={{ width: "100%", height: "370px", maxHeight: "370px" }}>
           <CardImage />
