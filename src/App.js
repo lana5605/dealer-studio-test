@@ -1,23 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Banner from './components/Banner';
+import Card from './components/Card';
+import CardImage from './components/CardImage';
+import CardHeader from './components/CardHeader';
+import CardBody from './components/CardBody';
+import Button from './components/Button';
+import { useState } from 'react';
 
 function App() {
+  const [selectedCard, setSelectedCard] = useState(2);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Banner />
+      <div className="Cards">
+        <Card isSelected={selectedCard == 1} style={{ width: "100%", height: "370px", maxHeight: "370px" }}>
+          <CardImage />
+          <div className="CardContent">
+            <CardHeader cardHeader="Heading 1" />
+            <CardBody style={{ overflow: "scroll" }}>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+            </CardBody>
+            <Button buttonText="Button 1" slim={true} onClick={() => setSelectedCard(1)} />
+          </div>
+        </Card>
+        <Card isSelected={selectedCard == 2} style={{ width: "100%", height: "370px" }}>
+          <CardImage />
+          <div className="CardContent">
+            <CardHeader cardHeader="Heading 2" />
+            <CardBody style={{ overflow: "scroll" }}>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+            </CardBody>
+            <Button buttonText="Button 2" slim={true} onClick={() => setSelectedCard(2)} />
+          </div>
+        </Card>
+        <Card isSelected={selectedCard == 3} style={{ width: "100%", height: "370px" }}>
+          <CardImage />
+          <div className="CardContent">
+            <CardHeader cardHeader="Heading 3" />
+            <CardBody style={{ overflow: "scroll" }}>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+              <p>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+            </CardBody>
+            <Button buttonText="Button 3" slim={true} onClick={() => setSelectedCard(3)} />
+          </div>
+        </Card>
+      </div>
     </div>
   );
 }

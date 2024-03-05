@@ -1,0 +1,37 @@
+$primary_blue: #0072D4;
+$hover_blue: #02549d;
+$primary_text: #ffffff;
+
+.App {
+  text-align: center;
+}
+
+.Cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 30px 0;
+  padding: 0 23vw;
+  box-sizing: border-box;
+}
+
+// Mobile and tablet
+@media only screen and (max-width: 1050px) {
+  .Cards {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.CardContent {
+  padding: 10px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 20px 125px 41px;
+  grid-row-gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
