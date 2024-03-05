@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/dealer-studio-test/static/css/main.f855e6bc.css",
-    "main.js": "/dealer-studio-test/static/js/main.05c28582.js",
+    "main.css": "/dealer-studio-test/static/css/main.aec5b42c.css",
+    "main.js": "/dealer-studio-test/static/js/main.957dd649.js",
     "static/js/453.ed3810f9.chunk.js": "/dealer-studio-test/static/js/453.ed3810f9.chunk.js",
-    "static/media/logo.svg": "/dealer-studio-test/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/ford-ranger.jpg": "/dealer-studio-test/static/media/ford-ranger.40e261d8a20f4fdf87ef.jpg",
+    "static/media/brisbane.jpg": "/dealer-studio-test/static/media/brisbane.53e8c519bdd4d03b5d51.jpg",
     "index.html": "/dealer-studio-test/index.html",
-    "main.f855e6bc.css.map": "/dealer-studio-test/static/css/main.f855e6bc.css.map",
-    "main.05c28582.js.map": "/dealer-studio-test/static/js/main.05c28582.js.map",
+    "main.aec5b42c.css.map": "/dealer-studio-test/static/css/main.aec5b42c.css.map",
+    "main.957dd649.js.map": "/dealer-studio-test/static/js/main.957dd649.js.map",
     "453.ed3810f9.chunk.js.map": "/dealer-studio-test/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.05c28582.js"
+    "static/css/main.aec5b42c.css",
+    "static/js/main.957dd649.js"
   ]
 }
