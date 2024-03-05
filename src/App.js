@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <Banner />
       <div className="Cards">
-        <Card isSelected={selectedCard == 1} style={{ width: "100%", height: "370px", maxHeight: "370px" }}>
+        <Card isSelected={selectedCard === 1} style={{ width: "100%", height: "370px", maxHeight: "370px" }}>
           <CardImage />
           <div className="CardContent">
             <CardHeader cardHeader="Heading 1" />
@@ -23,7 +23,7 @@ function App() {
             <Button buttonText="Button 1" slim={true} onClick={() => setSelectedCard(1)} />
           </div>
         </Card>
-        <Card isSelected={selectedCard == 2} style={{ width: "100%", height: "370px" }}>
+        <Card isSelected={selectedCard === 2} style={{ width: "100%", height: "370px" }}>
           <CardImage />
           <div className="CardContent">
             <CardHeader cardHeader="Heading 2" />
@@ -33,7 +33,7 @@ function App() {
             <Button buttonText="Button 2" slim={true} onClick={() => setSelectedCard(2)} />
           </div>
         </Card>
-        <Card isSelected={selectedCard == 3} style={{ width: "100%", height: "370px" }}>
+        <Card isSelected={selectedCard === 3} style={{ width: "100%", height: "370px" }}>
           <CardImage />
           <div className="CardContent">
             <CardHeader cardHeader="Heading 3" />
