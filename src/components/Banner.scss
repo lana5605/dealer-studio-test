@@ -1,0 +1,56 @@
+@import '../App.scss';
+
+.Banner {
+  width: 100vw;
+  min-height: 540px;
+  position: relative;
+  background-image: url('../assets/ford-ranger.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 47vw;
+  min-width: 700px;
+  margin: auto;
+  min-height: 500px;
+  color: $primary_text;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+// Mobile and tablet screens
+@media only screen and (max-width: 1050px) {
+  .Content {
+    width: 100vw;
+    padding: 20px;
+    min-width: 0;
+  }
+}
+
+.Title {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.Subtitle {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 45px;
+}

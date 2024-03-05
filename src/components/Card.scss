@@ -1,0 +1,15 @@
+@import '../App.scss';
+
+.Card {
+  min-width: 300px;
+  min-height: 370px;
+  margin: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 5px 0px #babbb9;
+  overflow: hidden;
+}
+
+.CardOutline {
+  border: 5px solid $primary_blue;
+  box-sizing: border-box;
+}

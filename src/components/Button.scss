@@ -1,0 +1,22 @@
+@import '../App.scss';
+
+.Button {
+  background-color: $primary_blue;
+  min-width: 50px;
+  min-height: 25px;
+  color: $primary_text;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: center;
+  border-radius: 25px;
+  padding: 8px 45px;
+}
+
+.Slim {
+  padding: 6px 45px;
+}
+
+.Button:hover {
+  cursor: pointer;
+  background-color: $hover_blue;
+}

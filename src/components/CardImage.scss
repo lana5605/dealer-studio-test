@@ -1,0 +1,9 @@
+.CardImage {
+  width: 100%;
+  height: 130px;
+  clip-path: ellipse(10px);
+  overflow: hidden;
+  background-image: url('../assets/brisbane.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
